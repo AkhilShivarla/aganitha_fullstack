@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+body{
+   font-family: 'Open Sans',serif;
+   line-height: 28px;
+   font-size: 20px;
+}
+.header-name{
+    
+    padding: 10px;
+}
+.summary{
+    padding: 10px;
+}
+.graduation{
+    font-family: 'Roboto',serif;
+    margin-left: 10px;
+    word-spacing: 10px;
+}
