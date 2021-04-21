@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch json post data</title>
+
+    
+
+<!-- Script to handle AJAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+
+    
+</head>
+<body>
+    
+    <script>
+    var root = 'https://jsonplaceholder.typicode.com';
+        $.ajax({
+        url: root+"/posts",
+        method: 'GET',
+        contentType: 'application/json',
+        success: function(posts) {
+            $.each(posts,function(index,post){
+            document.write("<p><b>post_id:</b>"+post.id+"<br><b>userId:</b>"+post.userId+"<br><b>Title:</b>"+post.title+"<br><b>Body:</b>"+post.body+"</p>");
+            });
+        }
+        });
+    </script>
+
+</body>
+</html>
